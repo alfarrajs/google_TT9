@@ -1,0 +1,151 @@
+/* global style */
+
+body {
+  background-color: #202124;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+* {
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* end global style */
+
+ul {
+  margin: 0 !important;
+}
+.far{
+  display: flex;
+  margin:10px;
+}
+.far li {
+  margin: 10px;
+}
+
+/* navbar style */
+header.left {
+  /*ul width is 100% like div width*/
+}
+header.left > ul {
+  margin: 0 !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  padding: 10px;
+}
+header.left > ul > li {
+  margin-left: 4px;
+  margin-right: 10px;
+}
+/* end navbar style */
+
+/* start footer styling */
+button{
+  margin:10px;
+}
+.row > p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 10px;
+  padding: 10px;
+}
+.row-2 {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.row-2 > .one {
+  display: flex;
+  margin-left: -37px !important;
+}
+.row-2 > .two {
+  display: flex;
+}
+.row-2 > .one > li {
+  margin: 10px;
+}
+.row-2 > .two > li {
+  margin: 10px;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0 !important;
+}
+/* end footer styling */
+
+/* start section  */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+}
+.row-c1 {
+  font-size: 80px;
+}
+section  .center-div  .row-c1 > h1 {
+  font-size: 1em;
+}
+.row-c3  button {
+  padding: 10px;
+
+  color: #fff !important;
+  outline: none !important;
+  border: none;
+  background-color: #323036;
+}
+
+.center-div {
+  width: 100%;
+}
+.row-c2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 700px;
+  display: flex;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+}
+input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+
+
+
+/* responsive code */
+@media only screen and (max-width: 720px) {
+    .row-2{
+        flex-direction: column !important;
+    }
+  }
+
+
+  /* media for galaxy fold and brothers */
+  @media only screen and (max-width: 280px) {
+     .row-2{
+      display: none;
+    }
+    h1{
+      font-size:2rem!important;
+    }
+  }
+
+  /* end of medi */
+/* end of responsive code */
